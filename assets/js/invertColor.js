@@ -10,6 +10,7 @@ function invertColor() {
       p[i].style.color = "white";
     }
     for (var i=0; i<textarea.length; i++) {
+      textarea[i].style.color = "white";
       textarea[i].style["border-color"] = "white";
       textarea[i].style["background-color"] = "black";
     }
@@ -23,6 +24,7 @@ function invertColor() {
       p[i].style.color = "black";
     }
     for (var i=0; i<textarea.length; i++) {
+      textarea[i].style.color = "black";
       textarea[i].style["border-color"] = "black";
       textarea[i].style["background-color"] = "white";
     }
