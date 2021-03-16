@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>EVA Generator</title>
+</head>
+
+<body>
+  <div>
+    <div>
+      <p style="font-size:25px;">EVA-font text generated when typing.</p>
+      <p>small size: </p>
+      <textarea id="smallText" oninput="render('smallText', 'smallDisplayText');autoGrow(this);" rows=2 cols=25 placeholder="時に、西暦2020年"></textarea></p>
+      <p>Large size: </p>
+      <textarea style="height=40px;" id="largeText" oninput="render('largeText', 'largeDisplayText');autoGrow(this)" rows=3 cols=25 placeholder="冠
+天
+使、襲来"></textarea></p>
+      <button id="btnInvertColor" onclick="invertColor()">Invert color</button>
+    </div>
+
+    <div class="outputDiv" id="generatedDiv">
+      <div class="evaFont-small" id="smallDisplayText">時に、西暦2020年</div>
+      <div class="evaFont-large" id="largeDisplayText">冠
+天
+使、襲来</div>
+    </div>
+
+  <script src="assets/js/render.js" type="text/javascript"></script>
+  <script src="assets/js/autoGrow.js" type="text/javascript"></script>
+  <script src="assets/js/invertColor.js" type="text/javascript"></script>
+  <!--
+    <div>
+      <div id="canvasDiv"></div>
+      <button id="btn" onclick="genCanvas()">Generate image</button>
+    </div>
+
+  <script src="assets/js/html2canvas.min.js" type="text/javascript"></script>
+  <script src="assets/js/convert2Image.js" type="text/javascript"></script>
+  -->
+  </div>
+</body>
+</html>

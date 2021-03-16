@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "EVAFont";
+  src: url("assets/fonts/FOT-MatissePro-EB.woff2");
+}
+
+html {
+  text-align: center;
+}
+
+body {
+  font-family: "EVAFont";
+  font-size: 20px;
+  line-height:25px;
+  display:inline-block;
+  background-color: white;
+}
+
+body div {
+  text-align: left;
+  margin: 30px;
+}
+
+body div div {
+  margin: 10px;
+}
+
+div p {
+  padding: 2px;
+  margin: 0;
+  color: black;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 60px;
+  max-height: 100px;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+}
+
+.evaFont-small {
+  font-family: "EVAFont";
+  font-size: 60px;
+  line-height:60px;
+}
+
+.evaFont-large {
+  font-family: "EVAFont";
+  font-size: 80px;
+  line-height:80px;
+}
+
+.outputDiv {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+#smallDisplayText {
+  white-space: pre-wrap;
+}
+
+#largeDisplayText {
+  white-space: pre-wrap;
+}
+
+/*#canvasDiv {
+  padding: 20px;
+  background-color: black;
+}*/
